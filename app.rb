@@ -35,5 +35,6 @@ get '/gyazosh' do
   b.write amesh
   gyazo_token = params[:token]
   gyazo = Gyazo::Client.new(access_token: gyazo_token)
-  gyazo.upload(imagefile: b.path)[:permalink_url]
+  img = gyazo.upload(imagefile: b.path)
+  img[:url]
 end
