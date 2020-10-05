@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'gyazo'
 gem 'puma'
 gem 'rest-client'
 gem 'rmagick'
